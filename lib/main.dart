@@ -43,17 +43,19 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          // Container(
-          //   width: 200,
-          //   child: Card(
-          //     child: Text('Chart'),
-          //   ),
-          // ),
-          UserTransactions(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            // Container(
+            //   width: 200,
+            //   child: Card(
+            //     child: Text('Chart'),
+            //   ),
+            // ),
+            UserTransactions(),
+          ],
+        ),
       ),
     );
   }
